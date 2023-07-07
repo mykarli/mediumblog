@@ -21,7 +21,7 @@ from myapp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('indexx/',indexx, name='indexx'),
+    path('',indexx, name='indexx'),
     path('getstarted/',getstarted, name='getstarted'),
     path('joinmedium/',joinmedium, name='joinmedium'),
     path('membership/',membership, name='membership'),

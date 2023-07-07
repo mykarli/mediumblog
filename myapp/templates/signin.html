@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +11,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
 
@@ -18,7 +19,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <form class="d-flex sign" role="search">
-        <img class="mediumicon" src="/Resimler/medium.icon.sanitized.svg" alt="">
+        <img class="mediumicon" src="{% static '/Resimler/medium.icon.sanitized.svg' %}" alt="">
         <input class="form-control me-2" type="search" placeholder="Search Medium" aria-label="Search">
       </form>
 
@@ -31,18 +32,18 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Write
-                <img class="write" src="/Resimler/write.png" alt="">
+                <img class="write" src="{% static '/Resimler/write.png' %}" alt="">
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <img class="bell" src="/Resimler/bell.png" alt="">
+                <img class="bell" src="{% static '/Resimler/bell.png' %}" alt="">
               </a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                <img class="oguzhan" src="/Resimler/oguzhan.jpg" alt="">
+                <img class="oguzhan" src="{% static '/Resimler/oguzhan.jpg' %}" alt="">
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -90,7 +91,39 @@
         <div class="col-8">
           <div class="box d-flex justify-content-around">
             <div class="content">
-              <img class="img" src="resimler/img1.gif" alt="">
+              <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
+              <a href="#">Markham Heid in THE NUANCE</a> <br>
+              <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
+
+
+              <br>
+
+              <h3 class="font2">Latino characters have traditionally been underrepresented in mainstream comics. But
+                Spider-Man’s backstory makes him the perfect superhero to be recast as a minority.</h3>
+              <span class="font">May 30 . 5 min read</span>
+            </div>
+            <img class="" src="{% static 'resimler/img7.png' %}" alt="" width="200" height="134">
+          </div>
+
+          <div class="box d-flex justify-content-around">
+            <div class="content">
+              <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
+              <a href="#">Markham Heid in THE NUANCE</a> <br>
+              <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
+
+
+              <br>
+
+              <h3 class="font2">Latino characters have traditionally been underrepresented in mainstream comics. But
+                Spider-Man’s backstory makes him the perfect superhero to be recast as a minority.</h3>
+              <span class="font">May 30 . 5 min read</span>
+            </div>
+            <img class="" src="{% static 'resimler/img7.png' %}" alt="" width="200" height="134">
+          </div>
+
+          <div class="box d-flex justify-content-around">
+            <div class="content">
+              <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
               <a href="#">Markham Heid in THE NUANCE</a> <br>
               <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
 
@@ -106,7 +139,7 @@
 
           <div class="box d-flex justify-content-around">
             <div class="content">
-              <img class="img" src="resimler/img1.gif" alt="">
+              <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
               <a href="#">Markham Heid in THE NUANCE</a> <br>
               <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
 
@@ -117,12 +150,12 @@
                 Spider-Man’s backstory makes him the perfect superhero to be recast as a minority.</h3>
               <span class="font">May 30 . 5 min read</span>
             </div>
-            <img class="" src="resimler/img7.png" alt="" width="200" height="134">
+            <img class="" src="{% static 'resimler/img7.png' %}" alt="" width="200" height="134">
           </div>
 
           <div class="box d-flex justify-content-around">
             <div class="content">
-              <img class="img" src="resimler/img1.gif" alt="">
+              <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
               <a href="#">Markham Heid in THE NUANCE</a> <br>
               <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
 
@@ -133,12 +166,12 @@
                 Spider-Man’s backstory makes him the perfect superhero to be recast as a minority.</h3>
               <span class="font">May 30 . 5 min read</span>
             </div>
-            <img class="" src="resimler/img7.png" alt="" width="200" height="134">
+            <img class="" src="{% static 'resimler/img7.png' %}" alt="" width="200" height="134">
           </div>
 
           <div class="box d-flex justify-content-around">
             <div class="content">
-              <img class="img" src="resimler/img1.gif" alt="">
+              <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
               <a href="#">Markham Heid in THE NUANCE</a> <br>
               <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
 
@@ -149,12 +182,12 @@
                 Spider-Man’s backstory makes him the perfect superhero to be recast as a minority.</h3>
               <span class="font">May 30 . 5 min read</span>
             </div>
-            <img class="" src="resimler/img7.png" alt="" width="200" height="134">
+            <img class="" src="{% static 'resimler/img7.png' %}" alt="" width="200" height="134">
           </div>
 
           <div class="box d-flex justify-content-around">
             <div class="content">
-              <img class="img" src="resimler/img1.gif" alt="">
+              <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
               <a href="#">Markham Heid in THE NUANCE</a> <br>
               <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
 
@@ -165,12 +198,12 @@
                 Spider-Man’s backstory makes him the perfect superhero to be recast as a minority.</h3>
               <span class="font">May 30 . 5 min read</span>
             </div>
-            <img class="" src="resimler/img7.png" alt="" width="200" height="134">
+            <img class="" src="{% static 'resimler/img7.png' %}" alt="" width="200" height="134">
           </div>
 
           <div class="box d-flex justify-content-around">
             <div class="content">
-              <img class="img" src="resimler/img1.gif" alt="">
+              <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
               <a href="#">Markham Heid in THE NUANCE</a> <br>
               <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
 
@@ -181,12 +214,12 @@
                 Spider-Man’s backstory makes him the perfect superhero to be recast as a minority.</h3>
               <span class="font">May 30 . 5 min read</span>
             </div>
-            <img class="" src="resimler/img7.png" alt="" width="200" height="134">
+            <img class="" src="{% static 'resimler/img7.png' %}" alt="" width="200" height="134">
           </div>
 
           <div class="box d-flex justify-content-around">
             <div class="content">
-              <img class="img" src="resimler/img1.gif" alt="">
+              <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
               <a href="#">Markham Heid in THE NUANCE</a> <br>
               <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
 
@@ -197,12 +230,12 @@
                 Spider-Man’s backstory makes him the perfect superhero to be recast as a minority.</h3>
               <span class="font">May 30 . 5 min read</span>
             </div>
-            <img class="" src="resimler/img7.png" alt="" width="200" height="134">
+            <img class="" src="{% static 'resimler/img7.png' %}" alt="" width="200" height="134">
           </div>
 
           <div class="box d-flex justify-content-around">
             <div class="content">
-              <img class="img" src="resimler/img1.gif" alt="">
+              <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
               <a href="#">Markham Heid in THE NUANCE</a> <br>
               <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
 
@@ -213,12 +246,12 @@
                 Spider-Man’s backstory makes him the perfect superhero to be recast as a minority.</h3>
               <span class="font">May 30 . 5 min read</span>
             </div>
-            <img class="" src="resimler/img7.png" alt="" width="200" height="134">
+            <img class="" src="{% static 'resimler/img7.png' %}" alt="" width="200" height="134">
           </div>
 
           <div class="box d-flex justify-content-around">
             <div class="content">
-              <img class="img" src="resimler/img1.gif" alt="">
+              <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
               <a href="#">Markham Heid in THE NUANCE</a> <br>
               <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
 
@@ -229,12 +262,12 @@
                 Spider-Man’s backstory makes him the perfect superhero to be recast as a minority.</h3>
               <span class="font">May 30 . 5 min read</span>
             </div>
-            <img class="" src="resimler/img7.png" alt="" width="200" height="134">
+            <img class="" src="{% static 'resimler/img7.png' %}" alt="" width="200" height="134">
           </div>
 
           <div class="box d-flex justify-content-around">
             <div class="content">
-              <img class="img" src="resimler/img1.gif" alt="">
+              <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
               <a href="#">Markham Heid in THE NUANCE</a> <br>
               <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
 
@@ -245,12 +278,12 @@
                 Spider-Man’s backstory makes him the perfect superhero to be recast as a minority.</h3>
               <span class="font">May 30 . 5 min read</span>
             </div>
-            <img class="" src="resimler/img7.png" alt="" width="200" height="134">
+            <img class="" src="{% static 'resimler/img7.png' %}" alt="" width="200" height="134">
           </div>
 
           <div class="box d-flex justify-content-around">
             <div class="content">
-              <img class="img" src="resimler/img1.gif" alt="">
+              <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
               <a href="#">Markham Heid in THE NUANCE</a> <br>
               <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
 
@@ -261,12 +294,12 @@
                 Spider-Man’s backstory makes him the perfect superhero to be recast as a minority.</h3>
               <span class="font">May 30 . 5 min read</span>
             </div>
-            <img class="" src="resimler/img7.png" alt="" width="200" height="134">
+            <img class="" src="{% static 'resimler/img7.png' %}" alt="" width="200" height="134">
           </div>
 
           <div class="box d-flex justify-content-around">
             <div class="content">
-              <img class="img" src="resimler/img1.gif" alt="">
+              <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
               <a href="#">Markham Heid in THE NUANCE</a> <br>
               <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
 
@@ -277,12 +310,12 @@
                 Spider-Man’s backstory makes him the perfect superhero to be recast as a minority.</h3>
               <span class="font">May 30 . 5 min read</span>
             </div>
-            <img class="" src="resimler/img7.png" alt="" width="200" height="134">
+            <img class="" src="{% static 'resimler/img7.png' %}" alt="" width="200" height="134">
           </div>
 
           <div class="box d-flex justify-content-around">
             <div class="content">
-              <img class="img" src="resimler/img1.gif" alt="">
+              <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
               <a href="#">Markham Heid in THE NUANCE</a> <br>
               <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
 
@@ -293,39 +326,7 @@
                 Spider-Man’s backstory makes him the perfect superhero to be recast as a minority.</h3>
               <span class="font">May 30 . 5 min read</span>
             </div>
-            <img class="" src="resimler/img7.png" alt="" width="200" height="134">
-          </div>
-
-          <div class="box d-flex justify-content-around">
-            <div class="content">
-              <img class="img" src="resimler/img1.gif" alt="">
-              <a href="#">Markham Heid in THE NUANCE</a> <br>
-              <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
-
-
-              <br>
-
-              <h3 class="font2">Latino characters have traditionally been underrepresented in mainstream comics. But
-                Spider-Man’s backstory makes him the perfect superhero to be recast as a minority.</h3>
-              <span class="font">May 30 . 5 min read</span>
-            </div>
-            <img class="" src="resimler/img7.png" alt="" width="200" height="134">
-          </div>
-
-          <div class="box d-flex justify-content-around">
-            <div class="content">
-              <img class="img" src="resimler/img1.gif" alt="">
-              <a href="#">Markham Heid in THE NUANCE</a> <br>
-              <a href="#"> <b>My First Immersion in Apple Vision <br> Pro: Heavy, Man!</b> </a>
-
-
-              <br>
-
-              <h3 class="font2">Latino characters have traditionally been underrepresented in mainstream comics. But
-                Spider-Man’s backstory makes him the perfect superhero to be recast as a minority.</h3>
-              <span class="font">May 30 . 5 min read</span>
-            </div>
-            <img class="" src="resimler/img7.png" alt="" width="200" height="134">
+            <img class="" src="{% static 'resimler/img1.gif' %}" alt="" width="200" height="134">
           </div>
         </div>
 
