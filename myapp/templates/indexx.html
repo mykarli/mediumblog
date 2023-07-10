@@ -92,7 +92,7 @@
         <div class="col-4">
           <div class="box">
             <b class="boxnumber">01</b>
-            <img class="img" src="resimler/img1.gif" alt="">
+            <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
             <a href="#">Markham Heid in THE NUANCE</a> <br>
             <a href="#"> <b>Why Midlife Is Going to Be Especially Hard <br> Hard On Millennials</b></a>
 
@@ -103,7 +103,7 @@
           </div>
           <div class="box">
             <b class="boxnumber">04</b>
-            <img class="img" src="resimler/img2.jpg" alt="">
+            <img class="img" src="{% static 'resimler/img2.jpg' %}" alt="">
             <a href="#">Allen Helton in Better Programming</a> <br>
             <a href="#"> <b>ChatGPT Changed How I Write Software </b></a>
 
@@ -116,7 +116,7 @@
         <div class="col-4">
           <div class="box">
             <b class="boxnumber">02</b>
-            <img class="img" src="resimler/img3.png" alt="">
+            <img class="img" src="{% static 'resimler/img3.png' %}" alt="">
             <a href="#">Linda Caroll in Middle-Pause</a> <br>
             <a href="#"> <b>No One Really Tells Your The Hardest Part Of <br> Getting Older</b></a>
 
@@ -126,7 +126,7 @@
           </div>
           <div class="box">
             <b class="boxnumber">05</b>
-            <img class="img" src="resimler/img4.png" alt="">
+            <img class="img" src="{% static 'resimler/img4.png' %}" alt="">
             <a href="#">M.G. Siegler in 500ish</a> <br>
             <a href="#"> <b>Ted Lasso Will Be Back</b></a>
 
@@ -139,7 +139,7 @@
         <div class="col-4">
           <div class="box">
             <b class="boxnumber">03</b>
-            <img class="img" src="resimler/img5.jpg" alt="">
+            <img class="img" src="{% static 'resimler/img5.jpg' %}" alt="">
             <a href="#">ASUS BUTTERFLY in ZORA</a> <br>
             <a href="#"> <b>The Emergence of The Blueprint IV:Blue Ivy <br> Carter</b></a>
 
@@ -149,7 +149,7 @@
           </div>
           <div class="box">
             <b class="boxnumber">06</b>
-            <img class="img" src="resimler/img6.png" alt="">
+            <img class="img" src="{% static 'resimler/img6.png' %}" alt="">
             <a href="#">Dan Foster in Backyard Church</a> <br>
             <a href="#"> <b>Bible Banned in Schools as Book <br> Censorship Backfires Big Time</b></a>
 
@@ -172,7 +172,7 @@
         <div class="col-8">
           <div class="box d-flex justify-content-around">
             <div class="content">
-              <img class="img" src="resimler/img1.gif" alt="">
+              <img class="img" src="{% static 'resimler/img1.gif' %}" alt="">
               <a href="#"></a>{{ indexp.user }}<br>
               <a href="#"> <b>{{ indexp.header }}</b> </a>     
               <br>
@@ -300,27 +300,27 @@
           </div>
           <div class="social-btn text-center">
             <button>
-              <a href="#"><img src="/Resimler/google.png" alt="">Google</a>
+              <a href="#"><img src="{% static '/Resimler/google.png' %}" alt="">Google</a>
             </button>
           </div>
           <div class="social-btn text-center">
             <button>
-              <a href="#"><img src="/Resimler/facebook.png" alt="">Facebook</a>
+              <a href="#"><img src="{% static 'Resimler/facebook.png' %}" alt="">Facebook</a>
             </button>
           </div>
           <div class="social-btn text-center">
             <button>
-              <a href="#"><img src="/Resimler/twitter.png" alt="">Twitter</a>
+              <a href="#"><img src="{% static '/Resimler/twitter.png' %}" alt="">Twitter</a>
             </button>
           </div>
           <div class="social-btn text-center">
             <button>
-              <a href="#"><img src="/Resimler/AppleStore_2x.png" alt="">Apple</a>
+              <a href="#"><img src="{% static '/Resimler/AppleStore_2x.png' %}" alt="">Apple</a>
             </button>
           </div>
           <div class="social-btn text-center">
             <button>
-              <a href="#"><img src="/Resimler/gmail.png" alt="">Email</a>
+              <a href="#"><img src="{% static '/Resimler/gmail.png' %}" alt="">Email</a>
             </button>
             <h6 class="myh21">No account? <a class="createone" href="#"><b>Create one</b></a></h6>
             <br><br>
@@ -352,17 +352,17 @@
         </div>
         <div class="getstarted-btn text-center">
           <button>
-            <a href="#"><img src="/Resimler/google.png" alt="">Google</a>
+            <a href="#"><img src="{% static '/Resimler/google.png' %}" alt="">Google</a>
           </button>
         </div>
         <div class="getstarted-btn text-center">
           <button>
-            <a href="#"><img src="/Resimler/facebook.png" alt="">Facebook</a>
+            <a href="#"><img src="{% static '/Resimler/facebook.png' %}" alt="">Facebook</a>
           </button>
         </div>
         <div class="getstarted-btn text-center">
           <button>
-            <a href="#"><img src="/Resimler/gmail.png" alt="">Email</a>
+            <a href="#"><img src="{% static '/Resimler/gmail.png' %}" alt="">Email</a>
           </button>
           <form method="POST" action="">
             {% csrf_token %}
