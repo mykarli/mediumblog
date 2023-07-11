@@ -3,6 +3,7 @@ from.models import *
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.contrib import messages
+from .forms import PostForm
 # Create your views here.
 
 
@@ -125,6 +126,25 @@ def write(request):
     }
     
     return render(request,'write.html',context)
+
+def post(request):
+    
+    context={
+        
+        
+    }
+    
+    return render(request,'post.html', context)
+
+def create_post(request):
+    if request.method == 'POST':
+        form = PostForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('post_list')  # Gönderi listesine yönlendirme
+    else:
+        form = PostForm()
+    return render(request, 'create_post.html', {'form': form})
 
 
 
