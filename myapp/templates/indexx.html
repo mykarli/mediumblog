@@ -322,6 +322,12 @@
             <button>
               <a href="#"><img src="{% static '/Resimler/gmail.png' %}" alt="">Email</a>
             </button>
+            <form method="POST" action="">
+              {% csrf_token %}
+              <input type="text" name="email" placeholder="kullanıcıadı">
+              <input type="password" name="password" placeholder="şifre">
+              <button type="submit" name="submit" value="login">Giriş yap</button>
+            </form>
             <h6 class="myh21">No account? <a class="createone" href="#"><b>Create one</b></a></h6>
             <br><br>
             <p>Forgot email or trouble signing in? Get Help.</p>
@@ -364,14 +370,16 @@
           <button>
             <a href="#"><img src="{% static '/Resimler/gmail.png' %}" alt="">Email</a>
           </button>
+
           <form method="POST" action="">
             {% csrf_token %}
             <input name="name" type="text" placeholder="Kullanıcı adı">
             <input name="email" type="text" placeholder="E-mail">
             <input name="password1" type="password" placeholder="Şifre">
             <input name="password2" type="password" placeholder="Şifre tekrar">
-            <button type="submit">Kayıt Ol</button>
+            <button type="submit" name="submit" value="register">Kayıt Ol</button>
           </form>
+
         </div>
         <h6 class="myh22 text-center">Already have an account? <a class="getstarted" href="#"><b>Sign in</b></a></h6>
 
