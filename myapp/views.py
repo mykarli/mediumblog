@@ -4,6 +4,8 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.contrib import messages
 from .forms import PostForm
+from django.shortcuts import redirect, get_object_or_404
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 
@@ -127,24 +129,35 @@ def write(request):
     
     return render(request,'write.html',context)
 
+
+
 def post(request):
-    
+    likedposts = Post.objects.all() 
     context={
-        
-        
+        likedposts:'likedposts'
+    
     }
     
-    return render(request,'post.html', context)
-
-def create_post(request):
     if request.method == 'POST':
         form = PostForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('post_list')  # Gönderi listesine yönlendirme
     else:
-        form = PostForm()
-    return render(request, 'create_post.html', {'form': form})
+        form= PostForm()
+    return render(request,'post.html',{'form': form})
+
+
+def postlike(request, post_id):
+    post = get_object_or_404(Post, pk=post_id)
+    if request.user in post.likes.all():
+        post.likes.remove(request.user)
+        
+    else:
+        post.likes.add(request.user)
+    return redirect('postlike.html', post_id =post_id)        
+
+
 
 
 

@@ -20,6 +20,8 @@ from django.conf.urls.static import static
 from myapp.views import *
 
 
+app_name = 'myapp'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',indexx, name='indexx'),
@@ -31,6 +33,7 @@ urlpatterns = [
     path('write/',write, name='write'),
     path('welcome/',welcome, name='welcome'),
     path('post/',post, name='post'),
+    path('postlike/',postlike,name='postlike'),
     
     
 ]+ static(settings.MEDIA_URL, document_root =settings.MEDIA_ROOT)

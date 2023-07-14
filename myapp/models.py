@@ -20,4 +20,6 @@ class UserInfo(models.Model):
 class Post(models.Model):
     title = models.CharField(("Başlık"),max_length=200)
     content = models.TextField(("Paragraf"))
-     
+    likes = models.ManyToManyField(User, related_name='liked_posts')
+    
+    
